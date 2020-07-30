@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewCaseActivity"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    >
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:padding="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:text="Case Name"
+                android:textSize="30dp"
+                android:textColor="@color/colorPrimary"
+                android:id="@+id/caseName"
+                android:textAlignment="center"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2015"
+                android:textColor="@color/colorPrimary"
+                android:textSize="25dp"
+                android:padding="5dp"
+                android:id="@+id/caseYear"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Case Type"
+                android:textColor="@color/colorPrimary"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:id="@+id/caseT"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="plantiff"
+                android:textColor="@color/colorPrimary"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:layout_marginStart="20dp"
+                android:paddingTop="10dp"
+                android:textAlignment="textStart"
+                android:id="@+id/caseP"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="v/s"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:textColor="@color/colorPrimary" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="defendant"
+                android:textColor="@color/colorPrimary"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:paddingBottom="10dp"
+                android:textAlignment="textEnd"
+                android:id="@+id/caseD"
+                android:layout_marginEnd="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:text="Details"
+                android:textColor="#fff"
+                android:textSize="25dp"
+                android:layout_margin="18dp"
+                android:padding="10dp"
+                android:id="@+id/caseDesc"
+                />
+
+
+        </LinearLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hearing"
+        android:textColor="#fff"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Next Date"
+        android:id="@+id/next"
+        android:background="@color/colorPrimary"
+        android:textAlignment="textEnd"
+        android:paddingEnd="30dp"
+        android:textColor="#fff"
+        android:textSize="15dp"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:id="@+id/recyclerView"
+        android:layout_marginTop="10dp"/>
+
+
+
+</LinearLayout>
